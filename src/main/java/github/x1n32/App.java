@@ -1,4 +1,4 @@
-package x1n32.github.io;
+package github.x1n32;
 
 /**
  * Hello world!

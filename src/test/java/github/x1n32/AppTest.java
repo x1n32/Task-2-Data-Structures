@@ -1,4 +1,4 @@
-package com.mycompany.app;
+package github.x1n32;
 
 import static org.junit.Assert.assertTrue;
 

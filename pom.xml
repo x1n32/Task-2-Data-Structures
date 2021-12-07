@@ -4,19 +4,20 @@
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
 
-  <groupId>Matthew Chau</groupId>
-  <artifactId>my-app</artifactId>
+  <groupId>github.x1n32</groupId>
+  <artifactId>Task-2-Data-Structures</artifactId>
   <version>1.0-SNAPSHOT</version>
 
-  <name>Matthew Chau</name>
+  <name>Task-2-Data-Structures</name>
   <!-- FIXME change it to the project's website -->
-  <url>https://github.com/x1n32/How-to-GitHub</url>
+  <url>http://www.example.com</url>
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-    <maven.compiler.source>1.7</maven.compiler.source>
-    <maven.compiler.target>1.7</maven.compiler.target>
+    <maven.compiler.source>11</maven.compiler.source>
+    <maven.compiler.target>11</maven.compiler.target>
   </properties>
+
 
   <dependencies>
     <dependency>
@@ -25,6 +26,13 @@
       <version>4.11</version>
       <scope>test</scope>
     </dependency>
+   <!-- https://mvnrepository.com/artifact/org.junit.jupiter/junit-jupiter-api -->
+   <dependency>
+    <groupId>org.junit.jupiter</groupId>
+    <artifactId>junit-jupiter-api</artifactId>
+    <version>5.8.2</version>
+    <scope>test</scope>
+  </dependency>
   </dependencies>
 
   <build>
