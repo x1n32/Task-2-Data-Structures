@@ -1,10 +1,15 @@
 //pg 241 - Hash maps. Great for manipulating large amounts of data.
-package com.java21days;
+package github.x1n32;
+
 import java.util.*;
 
 
 //Challenge: add two more conditions and put the coditions as an enum
 //Change "mint" to Condition.MINT etc. Enum added at the bottom
+
+//Create a PRISTINE_MINT condition where it sells for 5 times the price,
+//and a COVERLESS that sells for 0.1 times the price.
+
 
 
 public class ComicBooks {
@@ -81,7 +86,7 @@ class Comic { //5 instance vars
 }
 
 
-//Enum of conditions
+//Enum of conditions - they are like constants: static and final.
 enum Condition {
     PRISTINE_MINT,
     MINT,

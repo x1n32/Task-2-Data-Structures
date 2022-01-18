@@ -28,6 +28,10 @@ public class Arrays {
 		System.out.println();
 	 }
 
+	 /**
+	  * Insetion sort.
+	  * @param array
+	  */
 	 public static void insertionSort(int array[]) {  
         int n = array.length;  
         for (int j = 1; j < n; j++) {  
@@ -41,7 +45,12 @@ public class Arrays {
         }  
     }  
 
-	private static void printArrayAndTotal(String message, int array[]) {
+	/**
+	 * Calculates the cumulative total of all values in the array.
+	 * @param message
+	 * @param array
+	 */
+	private static void printTotal(String message, int array[]) {
 		System.out.println(message + ": [length: " + array.length + "]");
 		float total = 0;
 		for (int i = 0; i < array.length; i++) {
@@ -61,7 +70,7 @@ public class Arrays {
 
 		insertionSort(array);
 		printArray("Printing all elements in the array:", array);
-		printArrayAndTotal("Printing total:", array);
+		printTotal("Printing total:", array);
 
 
     }
