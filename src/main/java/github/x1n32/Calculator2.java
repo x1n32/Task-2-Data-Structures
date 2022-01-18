@@ -13,7 +13,7 @@ package github.x1n32;
      * e.g. 2x^2 -5x - 6 
      *      Gives the answer: x = 3.860.... and x = -0.88....
  */
-public class Calculator2 extends Calculator{
+public class Calculator2 extends Arrays{
 
     /**
      * Return the value of b squared.
