@@ -93,7 +93,7 @@ public class ListExample {
     public static void main(String[] args) throws Exception{
         System.out.println("\n ------------- \n");
 
-        //Creating an list of integer values. Notice int is spelt Integer here as it is a wrapper.
+        //Creating an list of integer values. Notice int is spelt Integer here as it is a wrapper/object.
         ArrayList<Integer> testScores = new ArrayList<>();
         testScores.add(99);
         testScores.add(3);

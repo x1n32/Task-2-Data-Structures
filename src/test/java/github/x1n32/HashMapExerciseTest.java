@@ -6,15 +6,13 @@ import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Nested;
 import org.junit.jupiter.api.Test;
 
-public class ComicBookTest {
-    
-	private Comic comix;
+public class HashMapExerciseTest {
+
 
     @BeforeEach
 	void initEach() {
 
-		Comic[] comix = new Comic[5];
-		
+
 		System.out.println("Now running tests");
 	}
 
@@ -25,10 +23,8 @@ public class ComicBookTest {
         @Test
 		@DisplayName("Create Comix")
 		public void rCheck() {
-            System.out.println("");
-            assertAll(
+		//	assert(findAndReplaceEmptyValue);
 
-				);
         }
 
 
