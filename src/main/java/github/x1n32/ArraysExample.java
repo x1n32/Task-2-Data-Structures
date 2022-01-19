@@ -9,7 +9,7 @@ package github.x1n32;
  *  This means that getting MyArray[1000] would take the same amount of time as getting MyArray[5]
  * 
  */
-public class Arrays {
+public class ArraysExample {
 
 	/**
 	 * Goes through the array and outputs them.
