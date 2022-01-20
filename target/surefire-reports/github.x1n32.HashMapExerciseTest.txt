@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
-Test set: github.x1n32.AppTest
+Test set: github.x1n32.HashMapExerciseTest
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.082 s - in github.x1n32.AppTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.066 s - in github.x1n32.HashMapExerciseTest

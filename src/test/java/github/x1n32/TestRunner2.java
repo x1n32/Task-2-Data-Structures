@@ -1,3 +1,7 @@
+
+
+/*
+
 package github.x1n32;
 import org.junit.runner.JUnitCore;
 import org.junit.runner.Result;
@@ -8,9 +12,9 @@ public class TestRunner2 {
        Result result = JUnitCore.runClasses(HashMapExerciseTest.class);
          
        for (Failure failure : result.getFailures()) {
-          System.out.println(failure.toString());
+          Systesm.out.println(failure.toString());
        }
          
        System.out.println(result.wasSuccessful());
     }
- } 
+ } */
