@@ -53,10 +53,15 @@ public class HashMapExercise {
 
     public static void findAndReplaceEmptyValue (HashMap<String, String> hMap){
         //CHALLENGE: Loop through the hash map for empty values (descriptions) and replace it with "Unknown Description"
-
+        for (String i : hMap.keySet()) {
+            if (hMap.get(i) == "" || hMap.get(i) == null ){
+                System.out.println("empty description found!");
+                hMap.put(i, "Unknown Description");
+            }
+        }
     }
 
-    public static void createNewHashMap (){
+    public static String createNewHashMap (){
         //CHALLENGE 2: Create a Hash Map with suitable Generics for the commented code below.
 
         //Create new Hash map here:
@@ -65,7 +70,7 @@ public class HashMapExercise {
 
         name.put(0,"Abby"); //Don't change these.
         name.put(1,"Becky");
-        System.out.println(name.get(0));
+        return(name.get(0));
 
     }
 
@@ -82,6 +87,8 @@ public class HashMapExercise {
         ItemDescriptions.put("Wooden Shield", "Wooden but durable. Can take a few hits. Be careful around fire");
         ItemDescriptions.put("Map", "A map of the street...");
         ItemDescriptions.put("lunch box", "Only an apple is inside...");
+        ItemDescriptions.put("void item?", "");
+        ItemDescriptions.put("Unknown?", null);
        
         //Can add more items here.
 
@@ -91,7 +98,8 @@ public class HashMapExercise {
         displayFindDes(ItemDescriptions, "Rusty Sword");
         changeDescription(ItemDescriptions, "Wooden Shield", "wooden it is!");
         displayHashMap(ItemDescriptions); //Run this a few times. Notice anything about the order?
-        
+        findAndReplaceEmptyValue(ItemDescriptions);
+        displayHashMap(ItemDescriptions);
         
 
     }
