@@ -70,7 +70,7 @@ public class HashMapExercise {
 
         name.put(0,"Abby"); //Don't change these.
         name.put(1,"Becky");
-        return(name.get(1));
+        return(name.get(0)); //Make it return Abby
 
     }
 
@@ -100,7 +100,7 @@ public class HashMapExercise {
         displayHashMap(ItemDescriptions); //Run this a few times. Notice anything about the order?
         findAndReplaceEmptyValue(ItemDescriptions);
         displayHashMap(ItemDescriptions);
-        
+
         createNewHashMap();
         
 
