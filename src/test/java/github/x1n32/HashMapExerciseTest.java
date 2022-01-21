@@ -69,6 +69,15 @@ public class HashMapExerciseTest {
 			 assertEquals(expected, ItemDescriptions.get("Map"), "This should match the same text as the value of map.");
  
 		  }
+		  @Test
+		  @DisplayName("checkValue2")
+		  public void checkValue2() {
+			 System.out.println("checking specific value in list 2");
+			  String expected = "This new descpription";
+			  ItemDescriptions.put("Item", "This new descpription");
+			  assertEquals(expected, ItemDescriptions.get("Item"), "This should match the same text as the value of map.");
+  
+		   }
 
 		  @Test
 		  @DisplayName("testChangeinValue")
@@ -82,6 +91,23 @@ public class HashMapExerciseTest {
 			 "Error. What the value returrned: " + ItemDescriptions.get("Wooden Shield") + " returned. when it should be " + newDescription);
 			 
 		  }
+
+		  @Test
+		  @DisplayName("testChangeinValue")
+		  public void testChangeinValue2(){
+			System.out.println("Testing new Description 2");
+			ItemDescriptions.put("Item", "This descpription");
+			String newDescription = "Chango description";
+
+			ItemDescriptions.put("Item", newDescription);
+
+			assertEquals(newDescription, ItemDescriptions.get("Item"),
+			 "Error. What the value returrned: " + ItemDescriptions.get("Item") + " returned. when it should be " + newDescription);
+			 
+		  }
+
+
+
 		  @Test
 		  @DisplayName("testFindEmptyValues")
 		  public void testFindEmptyValues(){
@@ -89,8 +115,14 @@ public class HashMapExerciseTest {
 			ItemDescriptions.put("empty", "");
 		    HashMapExercise.findAndReplaceEmptyValue(ItemDescriptions);
 			assertEquals("Unknown Description", ItemDescriptions.get("empty"));
-
-
+		  }
+		  @Test
+		  @DisplayName("testFindNullValues")
+		  public void testFindNullValues(){
+			System.out.println("Testing find and replace null values");
+			ItemDescriptions.put("empty2", null);
+		    HashMapExercise.findAndReplaceEmptyValue(ItemDescriptions);
+			assertEquals("Unknown Description", ItemDescriptions.get("empty2g"));
 		  }
 
 		  @Test
