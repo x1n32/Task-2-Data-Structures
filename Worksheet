@@ -1,19 +1,101 @@
 There are some tasks here before you start coding!
 Please make notes! 
-
+Name:
+Partner's name:
 ------------------------------
 Task 1: Keywords
-Match the keywords with the definitions:
+Match the keywords with the definitions: (copy and paste)
 
 -Data Structure
 -Array
+-element
 -Storage
 -List
 -Map
 
-=
-=
-=
-=
-=
+=A set of data values of the same type, stored in a sequence in a computer program.
+= contains values on the basis of key, i.e. key and value pair. Each key and value pair is known as an entry. Contains unique keys.
+=The way that data is stored in a database or program.
+=An individual component of an array.
+= found in the java.util package and inherits the Collection interface.
+  Has the facility to maintain the ordered collection. It contains the index-based methods to insert, update, delete and search the elements.
+  It can have the duplicate elements also. We can also store the null elements in the list.
+
+---------------------------------
+Task 2: Predict:
+Look at the code below and have a guess what it would output.
+Feel free to check answers by copying and pasting it to a new java file and runing it.
+
+i)
+int[] myNum = {10, 20, 30, 40};
+System.out.println(myNum[1]);
+
+PREDICTED OUTPUT: .....
+ACTUAL OUTPUT: ....
+
+ii)
+int[] myNum = {10, 20, 30, 40};
+myNum[3] = 64;
+myNum[3] = 77;
+System.out.println(myNum[3]);
+
+PREDICTED OUTPUT: .....
+ACTUAL OUTPUT: ....
+
+iii)
+int[] myNum = {10, 20, 30, 40};
+myNum[4] = 50;
+
+System.out.println(myNum[4] );
+
+PREDICTED OUTPUT: .....
+ACTUAL OUTPUT: ....
+
+iv)
+int[][] myNumbers = { {1, 2, 3, 4}, {5, 6, 7} }; //2D array
+int x = myNumbers[1][2];
+System.out.println(x);
+
+
+PREDICTED OUTPUT: .....
+ACTUAL OUTPUT: ....
+
+v) (Try this link to run the code: https://learn.onlinegdb.com/JU4zjIoMc)
+import java.util.ArrayList;
+import java.util.Collections;
+
+		ArrayList<Integer> myNum = new ArrayList<>();
+		myNum.add(20);
+		myNum.add(10);
+		myNum.add(40);
+		myNum.add(30);
+		Collections.sort(myNum);
+		
+		System.out.println(myNum.get(3));
+----------------------------------------------------------
+Task 3:
+Look at the demos for arrays and lists. Pay attention to how they are created.
+There are methods created as well to showcase some of their build-in functions.
+Comment areas where you think it might help.
+If you are really comfortable with it, add some extenstions to it. Make a bubble sort, or create another array/list.
+Search for specific values etc
+
+------------------------------------------------------------
+Task 4:
+Program/ debug code on Hash Map Exercise and Comic Book.
+hash map is similar to other data structures, but it stores key/value pairs, like a database.
+Push your changes when you think it is done, or want to keep a save. 
+Try pushing your changes to another branch then merge it when you are happy with it!
+If sharing code and working together separately, you can code a method each! 
+And see how it works when merged.
+
+If you are ever stuck, ask a friend and look at the examples. While they may be different data structures they handle data very similarly.
+Look at w3schools too.
+
+Which data structures are appropriate for what kinds of tasks?
+Do they have varying speeds?
+
+Answers to the coding tasks in the Answers Branch.
+
+
 
