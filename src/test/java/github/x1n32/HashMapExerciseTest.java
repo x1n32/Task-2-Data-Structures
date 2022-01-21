@@ -57,19 +57,24 @@ public class HashMapExerciseTest {
         @Test
 		@DisplayName("Create")
 		public void Create() {
+			System.out.println("Create list");
 			assertFalse(ItemDescriptions.isEmpty());
  		}
 
 		 @Test
 		 @DisplayName("checkValue")
 		 public void checkValue() {
+			System.out.println("checking specific value in list");
 			 String expected = "A map of the street...";
 			 assertEquals(expected, ItemDescriptions.get("Map"), "This should match the same text as the value of map.");
  
 		  }
 
 		  @Test
+		  @DisplayName("testChangeinValue")
 		  public void testChangeinValue(){
+			
+			System.out.println("Testing new Description");
 			String newDescription = "Testing change in description";
 			ItemDescriptions.put("Wooden Shield", newDescription);
 
@@ -78,7 +83,9 @@ public class HashMapExerciseTest {
 			 
 		  }
 		  @Test
+		  @DisplayName("testFindEmptyValues")
 		  public void testFindEmptyValues(){
+			System.out.println("Testing find and replace empty values");
 			ItemDescriptions.put("empty", "");
 		    HashMapExercise.findAndReplaceEmptyValue(ItemDescriptions);
 			assertEquals("Unknown Description", ItemDescriptions.get("empty"));
@@ -87,8 +94,10 @@ public class HashMapExerciseTest {
 		  }
 
 		  @Test
+		  @DisplayName("testHashMapCreationUnderstanding")
 		  public void testHashMapCreationUnderstanding(){
-			System.out.println("here");
+			System.out.println("Testing if user can create a hashmap in the method");
+			System.out.println("testHashMapCreationUnderstanding");
 			assertEquals("Abby", HashMapExercise.createNewHashMap());
 
 		  }
