@@ -1,4 +1,8 @@
 -------------------------------------------------------------------------------
 Test set: github.x1n32.HashMapExerciseTest
 -------------------------------------------------------------------------------
-Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.066 s - in github.x1n32.HashMapExerciseTest
+Tests run: 8, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.132 s <<< FAILURE! - in github.x1n32.HashMapExerciseTest
+testFindNullValues  Time elapsed: 0.018 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: expected: <Unknown Description> but was: <null>
+	at github.x1n32.HashMapExerciseTest$HashMapTesting.testFindNullValues(HashMapExerciseTest.java:125)
+

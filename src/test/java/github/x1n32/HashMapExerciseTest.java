@@ -93,12 +93,12 @@ public class HashMapExerciseTest {
 		  }
 
 		  @Test
-		  @DisplayName("testChangeinValue")
+		  @DisplayName("testChangeinValue2")
 		  public void testChangeinValue2(){
 			System.out.println("Testing new Description 2");
+
 			ItemDescriptions.put("Item", "This descpription");
 			String newDescription = "Chango description";
-
 			ItemDescriptions.put("Item", newDescription);
 
 			assertEquals(newDescription, ItemDescriptions.get("Item"),
