@@ -116,13 +116,14 @@ public class HashMapExerciseTest {
 		    HashMapExercise.findAndReplaceEmptyValue(ItemDescriptions);
 			assertEquals("Unknown Description", ItemDescriptions.get("empty"));
 		  }
+
 		  @Test
 		  @DisplayName("testFindNullValues")
 		  public void testFindNullValues(){
 			System.out.println("Testing find and replace null values");
 			ItemDescriptions.put("empty2", null);
 		    HashMapExercise.findAndReplaceEmptyValue(ItemDescriptions);
-			assertEquals("Unknown Description", ItemDescriptions.get("empty2g"));
+			assertEquals("Unknown Description", ItemDescriptions.get("empty2"));
 		  }
 
 		  @Test
