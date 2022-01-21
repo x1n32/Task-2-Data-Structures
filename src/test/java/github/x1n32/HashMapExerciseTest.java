@@ -98,7 +98,8 @@ public class HashMapExerciseTest {
 		  public void testHashMapCreationUnderstanding(){
 			System.out.println("Testing if user can create a hashmap in the method");
 			System.out.println("testHashMapCreationUnderstanding");
-			assertEquals("Abby", HashMapExercise.createNewHashMap());
+			assertEquals("Abby", HashMapExercise.createNewHashMap(), 
+			"The method should return Abby. Are the Generics for the map correct? Check for capital letters.");
 
 		  }
 
