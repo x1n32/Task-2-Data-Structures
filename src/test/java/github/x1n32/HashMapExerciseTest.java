@@ -42,7 +42,7 @@ public class HashMapExerciseTest {
 	
     @BeforeEach
 	void initEach() {
-		System.out.println("Starting Tests");
+		//System.out.println("Starting Tests");
 
 		ItemDescriptions.put("Rusty Sword", "Weak and Rusty. Perhaps a bit of polish would make it shine");
 		ItemDescriptions.put("Rusty Dagger", "Weak and Rusty. Perhaps a bit of polish would make it shine");

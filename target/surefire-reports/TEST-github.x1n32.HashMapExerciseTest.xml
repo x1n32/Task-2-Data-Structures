@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="github.x1n32.HashMapExerciseTest" time="0.116" tests="5" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="github.x1n32.HashMapExerciseTest" time="0.066" tests="5" errors="0" skipped="0" failures="0">
   <properties>
     <property name="awt.toolkit" value="sun.awt.X11.XToolkit"/>
     <property name="java.specification.version" value="11"/>
@@ -15,7 +15,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="US"/>
     <property name="sun.boot.library.path" value="/home/gitpod/.sdkman/candidates/java/11.0.13.fx-zulu/lib"/>
-    <property name="sun.java.command" value="/workspace/Task-2-Data-Structures/target/surefire/surefirebooter514160782994679908.jar /workspace/Task-2-Data-Structures/target/surefire 2022-01-21T14-26-01_817-jvmRun1 surefire2773230051523673242tmp surefire_012859198177963260809tmp"/>
+    <property name="sun.java.command" value="/workspace/Task-2-Data-Structures/target/surefire/surefirebooter13425622798793844804.jar /workspace/Task-2-Data-Structures/target/surefire 2022-01-21T14-45-19_788-jvmRun1 surefire2325291689276133060tmp surefire_09472409193469940232tmp"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="/workspace/Task-2-Data-Structures/target/test-classes:/workspace/Task-2-Data-Structures/target/classes:/workspace/m2-repository/junit/junit/4.11/junit-4.11.jar:/workspace/m2-repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:/workspace/m2-repository/org/junit/jupiter/junit-jupiter-api/5.8.2/junit-jupiter-api-5.8.2.jar:/workspace/m2-repository/org/opentest4j/opentest4j/1.2.0/opentest4j-1.2.0.jar:/workspace/m2-repository/org/junit/platform/junit-platform-commons/1.8.2/junit-platform-commons-1.8.2.jar:/workspace/m2-repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/workspace/m2-repository/org/junit/jupiter/junit-jupiter-engine/5.8.2/junit-jupiter-engine-5.8.2.jar:/workspace/m2-repository/org/junit/platform/junit-platform-engine/1.8.2/junit-platform-engine-1.8.2.jar:"/>
     <property name="sun.cpu.endian" value="little"/>
@@ -32,7 +32,7 @@
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="jdk.vendor.version" value="Zulu11.52+13-CA"/>
     <property name="java.awt.graphicsenv" value="sun.awt.X11GraphicsEnvironment"/>
-    <property name="surefire.real.class.path" value="/workspace/Task-2-Data-Structures/target/surefire/surefirebooter514160782994679908.jar"/>
+    <property name="surefire.real.class.path" value="/workspace/Task-2-Data-Structures/target/surefire/surefirebooter13425622798793844804.jar"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="11.0.13+8-LTS"/>
     <property name="user.name" value="gitpod"/>
@@ -41,7 +41,6 @@
     <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
     <property name="file.encoding" value="UTF-8"/>
     <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
-    <property name="skipTests" value="false"/>
     <property name="java.vendor.version" value="Zulu11.52+13-CA"/>
     <property name="localRepository" value="/workspace/m2-repository"/>
     <property name="java.vendor.url.bug" value="http://www.azul.com/support/"/>
@@ -59,9 +58,9 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="55.0"/>
   </properties>
-  <testcase name="testFindEmptyValues" classname="github.x1n32.HashMapExerciseTest$HashMapTesting" time="0.056"/>
-  <testcase name="checkValue" classname="github.x1n32.HashMapExerciseTest$HashMapTesting" time="0"/>
+  <testcase name="testFindEmptyValues" classname="github.x1n32.HashMapExerciseTest$HashMapTesting" time="0.031"/>
+  <testcase name="checkValue" classname="github.x1n32.HashMapExerciseTest$HashMapTesting" time="0.001"/>
   <testcase name="testHashMapCreationUnderstanding" classname="github.x1n32.HashMapExerciseTest$HashMapTesting" time="0.001"/>
-  <testcase name="testChangeinValue" classname="github.x1n32.HashMapExerciseTest$HashMapTesting" time="0.029"/>
-  <testcase name="Create" classname="github.x1n32.HashMapExerciseTest$HashMapTesting" time="0"/>
+  <testcase name="testChangeinValue" classname="github.x1n32.HashMapExerciseTest$HashMapTesting" time="0.015"/>
+  <testcase name="Create" classname="github.x1n32.HashMapExerciseTest$HashMapTesting" time="0.002"/>
 </testsuite>
