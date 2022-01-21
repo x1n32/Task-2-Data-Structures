@@ -12,6 +12,7 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Nested;
 import org.junit.jupiter.api.Test;
+import org.junit.rules.ErrorCollector;
 
 
 
@@ -20,6 +21,8 @@ public class HashMapExerciseTest {
 
 	HashMap<String, String> ItemDescriptions = new HashMap<>();
 	String fileReport = "";
+	ErrorCollector error = new ErrorCollector();
+	
 
 	@After
 	void file(){
@@ -64,10 +67,17 @@ public class HashMapExerciseTest {
 		 @Test
 		 @DisplayName("checkValue")
 		 public void checkValue() {
-			System.out.println("checking specific value in list");
-			 String expected = "A map of the street...";
-			 assertEquals(expected, ItemDescriptions.get("Map"), "This should match the same text as the value of map.");
- 
+
+			try {
+				System.out.println("checking specific value in list");
+				String expected = "A map of the street...";
+				assertEquals(expected, ItemDescriptions.get("Map"), "This should match the same text as the value of map.");
+	
+			} catch (Throwable e) {
+				error.addError(e);
+				System.out.print(e);
+			}
+
 		  }
 		  @Test
 		  @DisplayName("checkValue2")
@@ -116,7 +126,6 @@ public class HashMapExerciseTest {
 		    HashMapExercise.findAndReplaceEmptyValue(ItemDescriptions);
 			assertEquals("Unknown Description", ItemDescriptions.get("empty"));
 		  }
-
 		  @Test
 		  @DisplayName("testFindNullValues")
 		  public void testFindNullValues(){
