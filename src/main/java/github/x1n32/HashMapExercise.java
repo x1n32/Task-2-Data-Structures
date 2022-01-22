@@ -68,8 +68,8 @@ public class HashMapExercise {
         HashMap<Integer, String> name = new HashMap<>();
 
 
-        name.put(0,"Abby"); //Don't change these.
-        name.put(1,"Becky");
+        name.put(1,"Abby"); //Don't change these.
+        name.put(0,"Becky");
         return(name.get(0)); //Make it return Abby
 
     }
