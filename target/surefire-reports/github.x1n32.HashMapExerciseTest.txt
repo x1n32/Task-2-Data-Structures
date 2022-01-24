@@ -1,4 +1,8 @@
 -------------------------------------------------------------------------------
 Test set: github.x1n32.HashMapExerciseTest
 -------------------------------------------------------------------------------
-Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.073 s - in github.x1n32.HashMapExerciseTest
+Tests run: 16, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.09 s <<< FAILURE! - in github.x1n32.HashMapExerciseTest
+testHashMapCreationUnderstanding  Time elapsed: 0.009 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: expected: <Abby> but was: <Becky>
+	at github.x1n32.HashMapExerciseTest$HashMapTestingWithReport.testHashMapCreationUnderstanding(HashMapExerciseTest.java:344)
+
