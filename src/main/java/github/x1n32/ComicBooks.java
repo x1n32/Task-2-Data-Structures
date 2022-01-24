@@ -97,12 +97,8 @@ public class ComicBooks {
 
         //TO DO CHALLENGE 3: Create an ArrayList of <Comic> to store comic books rather than an array
         //Add Spider Man comic in to test. To Set the new price, you must use .get(position).setPrice(...);
-        ArrayList<Comic> myComix = new ArrayList<>();
-        myComix.add(new Comic("sup Spider Man", "1A", "very fine", 12_000.00F));
-        myComix.get(0).setPrice(quality.get(comix[0].condition));
-
-        myComix.add(new Comic("Incredible Hulk", "181", "near mint",680.00F));
-        myComix.get(1).setPrice(quality.get(comix[1].condition));
+       
+        ArrayList<Comic> myComix =  ;
 
         
         printArrayList(myComix);
@@ -119,12 +115,7 @@ public class ComicBooks {
     public static void printArrayList(ArrayList<Comic> arrayListComic) {
         //Copy the for loop above into this method. 
 
-            for (Comic com: arrayListComic){
-                System.out.println("Title: " + com.title);
-                System.out.println("Issue: " + com.issueNumber);
-                System.out.println("Condition: " + com.condition);
-                System.out.println("Price: $" + com.price + "\n");
-            }
+
         
     }  
 
