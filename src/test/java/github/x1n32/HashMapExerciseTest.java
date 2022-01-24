@@ -4,10 +4,14 @@ import static org.junit.jupiter.api.Assertions.*;
 import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
 import java.util.HashMap;
 
+
 import org.junit.Before;
-import org.junit.jupiter.api.AfterEach;
+import org.junit.jupiter.api.AfterAll;
+
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Nested;
@@ -20,14 +24,19 @@ import org.junit.jupiter.api.Test;
 public class HashMapExerciseTest {
 
 	HashMap<String, String> ItemDescriptions = new HashMap<>();
-	String fileReport = "Reporting Errors: \n";
+
+	static DateTimeFormatter dtf = DateTimeFormatter.ofPattern("yyyy/MM/dd HH:mm:ss");  
+	static LocalDateTime now = LocalDateTime.now();  
+	static String fileReport = "==================\n" + dtf.format(now)  + " \n";
+	static int beforeFileLength = fileReport.length();
+
 
 	//ErrorCollector error = new ErrorCollector();
 	
 
 	  @Before
-	  public void fileCreation(){
-  
+	  public static void fileCreation(){
+		
 		  try {
 			File myObj = new File("reportingErrors.txt");
 			if (myObj.createNewFile()) {
@@ -43,15 +52,20 @@ public class HashMapExerciseTest {
 	  }
 
 
-	@AfterEach
-	public void file(){
+	@AfterAll
+	public static void file(){
 
 		try {
 
-            FileWriter Writer = new FileWriter("reportingErrors.txt");
+            FileWriter Writer = new FileWriter("reportingErrors.txt",true);
             Writer.write(fileReport);
+			if (beforeFileLength == fileReport.length()){
+				Writer.write("All Tasks Complete and Working! Congratulations!");
+			}
+			
 			Writer.close();
             System.out.println("Successfully written.");
+			System.out.println(fileReport.length());
 
         }
         catch (IOException e) {
@@ -65,6 +79,7 @@ public class HashMapExerciseTest {
 	
     @BeforeEach
 	public void initEach() {
+		System.out.println(fileReport.length());
 		//System.out.println("Starting Tests");
 
 		ItemDescriptions.put("Rusty Sword", "Weak and Rusty. Perhaps a bit of polish would make it shine");
@@ -93,10 +108,10 @@ public class HashMapExerciseTest {
 				String expected = "A map of the street...";
 				assertEquals(expected, ItemDescriptions.get("Map"), "This should match the same text as the value of map.");
 	
-			} catch (Exception e) {
+			} catch (Throwable e) {
 				fileReport += "Error getting the correct value from the key: \n";
-				fileReport += e;
-				System.out.println(fileReport);
+				fileReport += e + "\n";
+				System.out.println(fileReport + "\n");
 			}
 
 		  }
@@ -110,10 +125,10 @@ public class HashMapExerciseTest {
 				ItemDescriptions.put("Item", "This new descpription");
 				assertEquals(expected, ItemDescriptions.get("Item"), "This should match the same text as the value of map.");
 	
-			} catch (Exception e) {
+			} catch (Throwable e) {
 				fileReport += "Error getting the correct value from the key: \n";
-				fileReport += e;
-				System.out.println(fileReport);
+				fileReport += e + "\n";
+				System.out.println(fileReport+ "\n");
 			}
 
 		   }
@@ -126,14 +141,14 @@ public class HashMapExerciseTest {
 				String newDescription = "Testing change in description";
 				ItemDescriptions.put("Wooden Shield", newDescription);
 	
-				assertEquals(newDescription, ItemDescriptions.get("Wooden Shield"),
-				 "Error. What the value returrned: " + ItemDescriptions.get("Wooden Shield") + " returned. when it should be " + newDescription);
+				assertEquals(newDescription, ItemDescriptions.get("Wooden Shield")
+				 );
 				 
 				
-			} catch (Exception e) {
-				fileReport += "Error changing the value of an existing key: \n";
-				fileReport += e;
-				System.out.println(fileReport);
+			} catch (Throwable e) {
+				fileReport += "Error changing the value of an existing key: \n    ";
+				fileReport += e + "\n";
+				System.out.println(fileReport+ "\n");
 			}
 			
 
@@ -148,14 +163,13 @@ public class HashMapExerciseTest {
 				String newDescription = "Chango description";
 				ItemDescriptions.put("Item", newDescription);
 	
-				assertEquals(newDescription, ItemDescriptions.get("Item"),
-				 "Error. What the value returrned: " + ItemDescriptions.get("Item") + " returned. when it should be " + newDescription);
+				assertEquals(newDescription, ItemDescriptions.get("Item"));
 				 
 				  
-			  } catch (Exception e) {
-				fileReport += "Error changing the value of an existing key: \n";
-				fileReport += e;
-				System.out.println(fileReport);
+			  } catch (Throwable e) {
+				fileReport += "Error changing the value of an existing key: \n   ";
+				fileReport += e + "\n";
+				System.out.println(fileReport + "\n");
 			}
 
 		  }
@@ -170,10 +184,10 @@ public class HashMapExerciseTest {
 				ItemDescriptions.put("empty", "");
 				HashMapExercise.findAndReplaceEmptyValue(ItemDescriptions);
 				assertEquals("Unknown Description", ItemDescriptions.get("empty"));
-			  } catch (Exception e) {
-				fileReport += "Error found in CHALLENGE1: findAndReplaceEmptyValue() when looking for empty values. If you haven't started this task, ignore this message. \n Otherwise, did you check you recieved the right input? Are you searching values correctly? \n Look for empty values with no spaces, and null values. Remember to add a new value, you just set it again, like how you add a new key/value. \n Make sure you set the description to be the same as what the task requires. \n";
-				fileReport += e;
-				System.out.println(fileReport);
+			  } catch (Throwable e) {
+				fileReport += "Error found in CHALLENGE1: findAndReplaceEmptyValue() when looking for empty values. If you haven't started this task, ignore this message. \n   Otherwise, did you check you recieved the right input? Are you searching values correctly? \n   Look for empty values with no spaces, and null values. Remember to add a new value, you just set it again, like how you add a new key/value. \n   Make sure you set the description to be the same as what the task requires. \n";
+				fileReport += e + "\n";
+				System.out.println(fileReport + "\n");
 			}
 
 		  }
@@ -186,10 +200,10 @@ public class HashMapExerciseTest {
 				ItemDescriptions.put("empty2", null);
 				HashMapExercise.findAndReplaceEmptyValue(ItemDescriptions);
 				assertEquals("Unknown Description", ItemDescriptions.get("empty2"));
-			} catch (Exception e) {
-				fileReport += "Error found in CHALLENGE1: findAndReplaceEmptyValue() when looking for null values. If you haven't started this task, ignore this message. \n Otherwise, did you check you recieved the right input? Are you searching values correctly? \n Look for empty values with no spaces, and null values. Remember to add a new value, you just set it again, like how you add a new key/value. \n Make sure you set the description to be the same as what the task requires. \n";
-				fileReport += e;
-				System.out.println(fileReport);
+			} catch (Throwable e) {
+				fileReport += "Error found in CHALLENGE1: findAndReplaceEmptyValue() when looking for null values. If you haven't started this task, ignore this message. \n   Otherwise, did you check you recieved the right input? Are you searching values correctly? \n   Look for empty values with no spaces, and null values. Remember to add a new value, you just set it again, like how you add a new key/value. \n   Make sure you set the description to be the same as what the task requires. \n";
+				fileReport += e + "\n";
+				System.out.println(fileReport + "\n");
 			}
 		  }
 
@@ -199,13 +213,12 @@ public class HashMapExerciseTest {
 			try {
 				System.out.println("Testing if user can create a hashmap in the method");
 				System.out.println("testHashMapCreationUnderstanding");
-				assertEquals("Abby", HashMapExercise.createNewHashMap(), 
-				"The method should return Abby. Are the Generics for the map correct? Check for capital letters.");
+				assertEquals("Abby", HashMapExercise.createNewHashMap() );
 	
 			} catch (Throwable e) {
-				fileReport += "Error found in CHALLENGE2: createNewHashMap(). If you haven't started this task, ignore this message. \n Have you checked you have put two generics? <> should have two data types inside that would suit 0 and Abby. You only need to write one line of code to create a hash map.";
-				fileReport += e;
-				System.out.println(fileReport);
+				fileReport += "Error found in CHALLENGE2: createNewHashMap(). If you haven't started this task, ignore this message. \n   Have you checked you have put two generics? \n   <> should have two data types inside that would suit 0 and Abby. \n   You only need to write one line of code to create a hash map.";
+				fileReport += e + "\n";
+				System.out.println(fileReport + "\n");
 			}
 		  }
 
