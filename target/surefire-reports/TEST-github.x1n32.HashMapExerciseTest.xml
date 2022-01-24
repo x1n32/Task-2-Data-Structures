@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="github.x1n32.HashMapExerciseTest" time="0.09" tests="16" errors="0" skipped="0" failures="1">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="github.x1n32.HashMapExerciseTest" time="0.073" tests="16" errors="0" skipped="0" failures="0">
   <properties>
     <property name="awt.toolkit" value="sun.awt.X11.XToolkit"/>
     <property name="java.specification.version" value="11"/>
@@ -15,7 +15,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="US"/>
     <property name="sun.boot.library.path" value="/home/gitpod/.sdkman/candidates/java/11.0.13.fx-zulu/lib"/>
-    <property name="sun.java.command" value="/workspace/Task-2-Data-Structures/target/surefire/surefirebooter4261556609258444441.jar /workspace/Task-2-Data-Structures/target/surefire 2022-01-24T14-00-14_169-jvmRun1 surefire14148899487267552840tmp surefire_07089368717352085845tmp"/>
+    <property name="sun.java.command" value="/workspace/Task-2-Data-Structures/target/surefire/surefirebooter1756103379831411528.jar /workspace/Task-2-Data-Structures/target/surefire 2022-01-24T14-20-26_601-jvmRun1 surefire8473877832599851802tmp surefire_04622291679780961062tmp"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="/workspace/Task-2-Data-Structures/target/test-classes:/workspace/Task-2-Data-Structures/target/classes:/workspace/m2-repository/junit/junit/4.11/junit-4.11.jar:/workspace/m2-repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:/workspace/m2-repository/org/junit/jupiter/junit-jupiter-api/5.8.2/junit-jupiter-api-5.8.2.jar:/workspace/m2-repository/org/opentest4j/opentest4j/1.2.0/opentest4j-1.2.0.jar:/workspace/m2-repository/org/junit/platform/junit-platform-commons/1.8.2/junit-platform-commons-1.8.2.jar:/workspace/m2-repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/workspace/m2-repository/org/junit/jupiter/junit-jupiter-engine/5.8.2/junit-jupiter-engine-5.8.2.jar:/workspace/m2-repository/org/junit/platform/junit-platform-engine/1.8.2/junit-platform-engine-1.8.2.jar:"/>
     <property name="sun.cpu.endian" value="little"/>
@@ -32,7 +32,7 @@
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="jdk.vendor.version" value="Zulu11.52+13-CA"/>
     <property name="java.awt.graphicsenv" value="sun.awt.X11GraphicsEnvironment"/>
-    <property name="surefire.real.class.path" value="/workspace/Task-2-Data-Structures/target/surefire/surefirebooter4261556609258444441.jar"/>
+    <property name="surefire.real.class.path" value="/workspace/Task-2-Data-Structures/target/surefire/surefirebooter1756103379831411528.jar"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="11.0.13+8-LTS"/>
     <property name="user.name" value="gitpod"/>
@@ -58,9 +58,9 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="55.0"/>
   </properties>
-  <testcase name="testChangeinValue2" classname="github.x1n32.HashMapExerciseTest$HashMapTestingWithReport" time="0.023"/>
-  <testcase name="testChangeinValue2" classname="github.x1n32.HashMapExerciseTest$HashMapTesting" time="0.001"/>
-  <testcase name="testFindEmptyValues" classname="github.x1n32.HashMapExerciseTest$HashMapTestingWithReport" time="0.001"/>
+  <testcase name="testChangeinValue2" classname="github.x1n32.HashMapExerciseTest$HashMapTestingWithReport" time="0.024"/>
+  <testcase name="testChangeinValue2" classname="github.x1n32.HashMapExerciseTest$HashMapTesting" time="0"/>
+  <testcase name="testFindEmptyValues" classname="github.x1n32.HashMapExerciseTest$HashMapTestingWithReport" time="0"/>
   <testcase name="testFindEmptyValues" classname="github.x1n32.HashMapExerciseTest$HashMapTesting" time="0.001"/>
   <testcase name="checkValue" classname="github.x1n32.HashMapExerciseTest$HashMapTestingWithReport" time="0"/>
   <testcase name="checkValue" classname="github.x1n32.HashMapExerciseTest$HashMapTesting" time="0.001"/>
@@ -68,18 +68,10 @@
   <testcase name="testFindNullValues" classname="github.x1n32.HashMapExerciseTest$HashMapTesting" time="0.001"/>
   <testcase name="checkValue2" classname="github.x1n32.HashMapExerciseTest$HashMapTestingWithReport" time="0.001"/>
   <testcase name="checkValue2" classname="github.x1n32.HashMapExerciseTest$HashMapTesting" time="0.001"/>
-  <testcase name="testHashMapCreationUnderstanding" classname="github.x1n32.HashMapExerciseTest$HashMapTestingWithReport" time="0.009">
-    <failure message="expected: &lt;Abby&gt; but was: &lt;Becky&gt;" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: expected: <Abby> but was: <Becky>
-	at github.x1n32.HashMapExerciseTest$HashMapTestingWithReport.testHashMapCreationUnderstanding(HashMapExerciseTest.java:344)
-]]></failure>
-    <system-out><![CDATA[40
-Testing if user can create a hashmap in the method
-testHashMapCreationUnderstanding
-]]></system-out>
-  </testcase>
-  <testcase name="testHashMapCreationUnderstanding" classname="github.x1n32.HashMapExerciseTest$HashMapTesting" time="0.01"/>
-  <testcase name="testChangeinValue" classname="github.x1n32.HashMapExerciseTest$HashMapTestingWithReport" time="0"/>
+  <testcase name="testHashMapCreationUnderstanding" classname="github.x1n32.HashMapExerciseTest$HashMapTestingWithReport" time="0"/>
+  <testcase name="testHashMapCreationUnderstanding" classname="github.x1n32.HashMapExerciseTest$HashMapTesting" time="0"/>
+  <testcase name="testChangeinValue" classname="github.x1n32.HashMapExerciseTest$HashMapTestingWithReport" time="0.001"/>
   <testcase name="testChangeinValue" classname="github.x1n32.HashMapExerciseTest$HashMapTesting" time="0.001"/>
-  <testcase name="Create" classname="github.x1n32.HashMapExerciseTest$HashMapTestingWithReport" time="0.001"/>
+  <testcase name="Create" classname="github.x1n32.HashMapExerciseTest$HashMapTestingWithReport" time="0.002"/>
   <testcase name="Create" classname="github.x1n32.HashMapExerciseTest$HashMapTesting" time="0.001"/>
 </testsuite>
