@@ -60,7 +60,7 @@ public class HashMapExerciseTest {
             FileWriter Writer = new FileWriter("reportingErrors.txt",true);
             Writer.write(fileReport);
 			if (beforeFileLength == fileReport.length()){
-				Writer.write("All Tasks Complete and Working! Congratulations!");
+				Writer.write("All Tasks Complete and Working! Congratulations!\n");
 			}
 			
 			Writer.close();
