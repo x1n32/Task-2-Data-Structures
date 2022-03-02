@@ -1,0 +1,9 @@
+# Files/directories that will not be tracked by git
+
+# Java classes
+target/
+
+# Gitpod configuration files
+.classpath
+.project
+.settings

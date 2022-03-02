@@ -95,15 +95,15 @@ public class ComicBooks {
             
         }      
 
+//---------------------------------------------------
         //TO DO CHALLENGE 3: Create an ArrayList of <Comic> to store comic books rather than an array
         //Add Spider Man comic in to test. To Set the new price, you must use .get(position).setPrice(...);
+        //uncomment the two lines below 
        
-        ArrayList<Comic> myComix =  ;
+   //   ArrayList<Comic> myComix =  ;
+   //   printArrayList(myComix);
 
-        
-        printArrayList(myComix);
-
-
+//--------------------------------------------------------
     }
 
 
